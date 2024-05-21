@@ -27,4 +27,13 @@ public class StudentService {
   public Optional<StudentModel> getStudentById(Long id){
     return studentRepository.findById(id);
   }
+
+  public boolean deleteById(Long id){
+    try {
+      studentRepository.deleteById(id);
+      return true;
+    } catch (Exception e) {
+      return false;
+    }
+  }
 }
