@@ -48,6 +48,7 @@ public class StudentController {
     }else{
       return "An error occurred during the progress of delete the user student with the id "+id;
     }
-
+    
+    //Agregue el metodo de editar
   }
 }
