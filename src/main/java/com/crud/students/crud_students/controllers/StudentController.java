@@ -40,6 +40,7 @@ public class StudentController {
       return this.studentService.getStudentById(id);
   }
 
+  //Yo hice este cambio...
   @DeleteMapping(path = "/{id}")
   public String deleteById(@PathVariable Long id){
     boolean result = this.studentService.deleteById(id);

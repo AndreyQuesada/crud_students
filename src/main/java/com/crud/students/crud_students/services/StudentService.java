@@ -28,6 +28,7 @@ public class StudentService {
     return studentRepository.findById(id);
   }
 
+  //Yo agregué este metodo.
   public boolean deleteById(Long id){
     try {
       studentRepository.deleteById(id);
